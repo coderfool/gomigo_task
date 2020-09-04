@@ -1,0 +1,16 @@
+{
+  "name": "listener_service",
+  "version": "1.0.0",
+  "description": "receives amqp messages from upload_service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "coderfool",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.6.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.1"
+  }
+}

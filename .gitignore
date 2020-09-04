@@ -40,6 +40,8 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+listener_service/node_modules
+upload_service/node_modules
 
 # TypeScript v1 declaration files
 typings/

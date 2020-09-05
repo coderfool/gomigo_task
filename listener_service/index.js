@@ -4,9 +4,10 @@ const amqp = require('amqplib/callback_api');
 const { BSONType } = require('mongodb');
 const MongoClient = require('mongodb').MongoClient;
 const ObjectId = require('mongodb').ObjectId;
+const dotenv = require('dotenv').config();
 
-const mongoUri = "mongodb+srv://coderfool:Gomigo99911@cluster0.mau2m.gcp.mongodb.net/gomigo?retryWrites=true&w=majority";
-const amqpUri = 'amqps://byiwnscu:3zcUMryYSJ_-Dck7ndnJKEtadGbDgQ4w@lionfish.rmq.cloudamqp.com/byiwnscu';
+const mongoUri = process.env.MONGO_URI;
+const amqpUri = process.env.AMQP_URI;
 
 const mongoClient = new MongoClient(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true });
 let collection = null;
